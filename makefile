@@ -2,22 +2,22 @@ init: copy_config #Init project
 	@echo ""
 
 start: #Start container
-	@docker-compose up -d
+	@sudo docker-compose up -d
 
 stop: #stop docker container
 	@sudo docker-compose down
 
 stop_remove: #stop docker container and remove DB
-	@docker-compose down --volumes
+	@sudo docker-compose down --volumes
 
 connect_wordpress: #connect to Wordpress docker container
-	@docker-compose exec app bash
+	@sudo docker-compose exec app bash
 
 connect_db: #connect to DB docker container
-	@docker-compose exec db bash
+	@sudo docker-compose exec db bash
 
 connect_nginx: #connect to DB docker container
-	@docker-compose exec webserver bash
+	@sudo docker-compose exec webserver bash
 
 show: #Show containers
 	@sudo docker ps

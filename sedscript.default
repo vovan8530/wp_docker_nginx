@@ -1,5 +1,5 @@
 s/database_name_here/wordpress/
-s/username_here/wordpress/
-s/password_here/password_here/
-s/localhost/localhost/
+s/username_here/root/
+s/password_here/1111/
+s/localhost/db/
 s/define('WP_DEBUG', false);/define('WP_DEBUG', true);/
